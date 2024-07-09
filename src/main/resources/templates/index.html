@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adopción de Mascotas</title>
+	<link rel="stylesheet" th:href="@{/CSS/estilo.css}">
+</head>
+
+<body>
+	<nav>
+		<ul class="menu-horizontal">
+			<li><a href="/">INICIO</a></li>
+			<li><a href="/somos">QUIENES SOMOS</a></li>
+			<li>
+				<a href="/adopcion">MANTENIMIENTO</a>
+				<ul class="menu-vertical">
+					<li><a href="/agregar">AGREGAR MASCOTA</a></li>
+				</ul>
+			</li>
+			<li>
+							<a href="/contactanos">CONTACTANOS</a>
+			            
+			            </li>
+		</ul>
+	</nav>
+	<br>
+	<header>
+		<img id="img-header" src="../imagen/banner1.png" alt="">
+	</header>
+	<br>
+	<br>
+	<main>
+		<br>
+		<h2 style="text-align: center;">LAS MASCOTAS MÁS SOLICITADAS</h2>
+		<section>
+			<article>
+				<div class="cuadro">
+					<figure>
+						<img src="imagen/mascota1.png" alt="">
+					</figure>
+					<div class="contenido">
+						<h3>BULLDOG FRANCES</h3>
+						<div class="contenedor">
+							<div class="botones">
+								<button id="open">VER MÁS...</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</article>
+			<article>
+				<div class="cuadro">
+					<figure>
+						<img src="imagen/mascota2.png" alt="">
+					</figure>
+					<div class="contenido">
+						<h3>BULL TERRIER</h3>
+						<button id="open1">VER MÁS...</button>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="cuadro">
+					<figure>
+						<img src="imagen/mascota3.png" alt="">
+					</figure>
+					<div class="contenido">
+						<h3>BOYERO DE BERNA</h3>
+						<button id="open2">VER MÁS...</button>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="cuadro">
+					<figure>
+						<img src="imagen/mascota4.png" alt="">
+					</figure>
+					<div class="contenido">
+						<h3>BOXER</h3>
+						<button id="open3">VER MÁS...</button>
+					</div>
+				</div>
+			</article>
+
+		</section>
+
+		<div class="modal-container" id="modal_container">
+			<div class="modal">
+				<h4 class="modal-tit">GIZMO, UNO DE LOS MAS SOLICITADOS </h4>
+				<br />
+				<center>
+					<p>NOMBRE : Gizmo</p>
+					<p>EDAD : 2 años</p>
+					<p>SEXO : Macho</p>
+					<p>TAMAÑO : Pequeño</p>
+					<p>RAZA : BULLDOG FRANCES</p>
+					<p>TIPO : Perro</p>
+					<button class="btn-detalle" id="close">CERRAR</button>
+				</center>
+			</div>
+		</div>
+
+		<div class="modal-container1" id="modal_container1">
+			<div class="modal">
+				<h4 class="modal-tit">COCO, EL MAS ENGREIDO </h4>
+				<br />
+				<center>
+					<p>NOMBRE : Coco</p>
+					<p>EDAD : 7 meces</p>
+					<p>SEXO : Macho</p>
+					<p>TAMAÑO : Mediano</p>
+					<p>RAZA : BULL TERRIER</p>
+					<p>TIPO : Perro</p>
+					<button class="btn-detalle" id="close1">CERRAR</button>
+				</center>
+			</div>
+		</div>
+		<div class="modal-container2" id="modal_container2">
+			<div class="modal">
+				<h4 class="modal-tit">DAISY, LA DAMA </h4>
+				<br />
+				<center>
+					<p>NOMBRE : Daisy</p>
+					<p>EDAD : 1 año</p>
+					<p>SEXO : Hembra</p>
+					<p>TAMAÑO : Pequeño</p>
+					<p>RAZA : BOYERO DE BERNA</p>
+					<p>TIPO : Perro</p>
+					<button class="btn-detalle" id="close2">CERRAR</button>
+				</center>
+			</div>
+		</div>
+		<div class="modal-container3" id="modal_container3">
+			<div class="modal">
+				<h4 class="modal-tit">BARAK, EL BEBE </h4>
+				<br />
+				<center>
+					<p>NOMBRE : Barack</p>
+					<p>EDAD : 2 meces</p>
+					<p>SEXO : Macho</p>
+					<p>TAMAÑO : Pequeño</p>
+					<p>RAZA : BOXER</p>
+					<p>TIPO : Perro</p>
+					<button class="btn-detalle" id="close3">CERRAR</button>
+				</center>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+</html>
+<script th:src="@{/JS/mascota.js}"></script>

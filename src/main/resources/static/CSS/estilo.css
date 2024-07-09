@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-image: url(../imagen/background.jpg);
+    background-size: cover 3;
+}
+
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover{
+    background-color: #E6B435;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 280px;
+    background-color: rgba(0,0,0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: #F1D692;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: black;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/*--------HEADER---------*/
+#img-header{
+    width: 100%;
+    height: 450px;
+    float: left;
+}
+
+/*--------MAIN---------*/
+main{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+article{
+    width: 92%;
+    height: auto;
+    margin: 1%;
+    overflow: hidden;
+}
+
+.cuadro{
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5) ;
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+
+.cuadro:hover{
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3%);
+}
+.cuadro img{
+    width: 100%;
+    height: 250px;
+}
+
+.cuadro .contenido{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(234, 236, 236);
+}
+
+.cuadro .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.cuadro .contenido button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #E6B435;
+    border: 1px solid #E6B435;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cuadro .contenido button:hover{
+    background: #E6B435;
+    color: #fff;
+}
+
+/*para el detalle de las mascotas*/
+
+.modal-container{
+	display: flex;
+	 background-image: url(../imagen/background.jpg);
+	 align-items: center;
+	 justify-content: center;
+	 position: fixed;
+	 pointer-events: none;
+	 opacity: 0;
+	 top: 300px;
+	 left: 21px;
+	 height: 320px;
+	 width: 330px;
+	 border: 2px solid #ccc; 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.show{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal-tit{
+	
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+
+}
+.btn-detalle{
+	text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #E6B435;
+    border: 1px solid #E6B435;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.btn-detalle:hover{
+	 background: #E6B435;
+    color: #fff;
+}
+
+.modal-container1{
+	display: flex;
+	 background-image: url(../imagen/background.jpg);
+	 align-items: center;
+	 justify-content: center;
+	 position: fixed;
+	 pointer-events: none;
+	 opacity: 0;
+	 top: 300px;
+	 left: 400px;
+	 height: 320px;
+	 width: 330px;
+	 border: 2px solid #ccc; 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.show1{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal-container2{
+	display: flex;
+	 background-image: url(../imagen/background.jpg);
+	 align-items: center;
+	 justify-content: center;
+	 position: fixed;
+	 pointer-events: none;
+	 opacity: 0;
+	 top: 300px;
+	 left: 780px;
+	 height: 320px;
+	 width: 330px;
+	 border: 2px solid #ccc; 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.show2{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.modal-container3{
+	display: flex;
+	 background-image: url(../imagen/background.jpg);
+	 align-items: center;
+	 justify-content: center;
+	 position: fixed;
+	 pointer-events: none;
+	 opacity: 0;
+	 top: 300px;
+	 left: 1158px;
+	 height: 320px;
+	 width: 330px;
+	 border: 2px solid #ccc; 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.show3{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-image: url(../imagen/background.jpg);
+    
+}
+
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover{
+    background-color: #E6B435;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 280px;
+    background-color: rgba(0,0,0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: #F1D692;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: black;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#quienes-somos {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+#quienes-somos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+}
+
+#quienes-somos p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+#quienes-somos .container {
+    background-color: #fff;
+}
+
+#personas-ayuda {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+#personas-ayuda h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.ayuda-cuadros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cuadro {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cuadro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cuadro p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+	
+    background-color: rgba(175, 204, 172);
+}
+
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
